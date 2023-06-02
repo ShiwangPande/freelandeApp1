@@ -2,9 +2,10 @@
   
   "name": "Ekstep",
   "short_name": "Ekstep",
-  "theme_color": "#000000",
-  "background_color": "#e078b6",
+  "theme_color": "#fdf5f3",
+  "background_color": "#225533",
   "display": "standalone",
+  "orientation": "portrait",
   "scope": "/",
   "start_url": "/",
   
