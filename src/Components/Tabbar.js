@@ -1,8 +1,6 @@
 import React from 'react'
 import './Tabbar.css'
-import { useState } from 'react';
 function Tabbar() {
-    const [sigIn, setSignIn] = useState(false);
     return (
         <div>
 

@@ -1,15 +1,16 @@
 import React from 'react'
 import course1 from "./img/course1.jpg"
 import course2 from "./img/course2.png"
-import camera from "./img/camera.png"
 import course3 from "./img/course3.png"
 import course4 from "./img/Course4.png"
 import stitch from "./img/cross-stitch.png"
-import computer from "./img/imac.png"
-import cosmetic from "./img/cosmetics.png"
 import press from "./img/french-press.png"
 import cup from "./img/cup.png"
-
+import excel from "./img/excel.jpg"
+import photo from "./img/photo.jpg"
+import makeup from "./img/makeup.jpg"
+import stiching from "./img/stiching.jpg"
+import mug from "./img/mug.jpg"
 import { Card, Col, Row, Button, Text } from "@nextui-org/react";
 function Home() {
 
@@ -52,7 +53,7 @@ function Home() {
                 <Row>
                   <Col span={3}>
                     <Card.Image
-                      src={camera}
+                      src={photo}
                       css={{ bg: "white", br: "50%" }}
                       height={40}
                       width={40}
@@ -129,7 +130,7 @@ function Home() {
                 <Row>
                   <Col span={3}>
                     <Card.Image
-                      src={stitch}
+                      src={stiching}
                       css={{ bg: "white", br: "50%" }}
                       height={40}
                       width={40}
@@ -206,7 +207,7 @@ function Home() {
                 <Row>
                   <Col span={3}>
                     <Card.Image
-                      src={computer}
+                      src={excel}
                       css={{ bg: "white", br: "50%" }}
                       height={40}
                       width={40}
@@ -219,7 +220,7 @@ function Home() {
 
                   </Text> */}
                     <Text color="white" size={15} style={{ fontWeight: "bold", marginLeft: "5px" }}>
-                      Basics into using a Computer
+                      Basics of Excel
                     </Text>
                   </Col>
                 </Row>
@@ -283,7 +284,7 @@ function Home() {
                 <Row>
                   <Col span={3}>
                     <Card.Image
-                      src={cosmetic}
+                      src={makeup}
                       css={{ bg: "white", br: "50%" }}
                       height={40}
                       width={40}
@@ -332,7 +333,7 @@ function Home() {
                 create Personalized Mugs
               </Text>
               <Text h3 color="white">
-                A Fun and Easy Way to Express Yourself.
+                to sell on different platforms
               </Text>
             </Col>
           </Card.Header>
@@ -360,7 +361,7 @@ function Home() {
                 <Row>
                   <Col span={3}>
                     <Card.Image
-                      src={press}
+                      src={mug}
                       css={{ bg: "white", br: "50%" }}
                       height={40}
                       width={40}

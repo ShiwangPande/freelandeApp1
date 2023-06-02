@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import cup from "./cup.mp4"
+import stiching from "./img/stiching.jpg"
 import "./mug.css"
 import Confetti from 'react-confetti';
 import cele from "./img/firework.png"
+import ReactPlayer from 'react-player';
 const CoursePage = () => {
     const [videoCompleted, setVideoCompleted] = useState(false);
     const handleVideoComplete = () => {
@@ -17,15 +18,21 @@ const CoursePage = () => {
 
     return (
         <div>
-            <h1 className='text-center text-2xl font-bold my-5 underline'>  Welcome to Basics of stitching Course</h1>
+            <div className='flex justify-center'>
+                <img className='h-20 w-20' src={stiching} alt="logo" />
+            </div>
+            <h1 className='text-center text-2xl font-bold my-5 text-rose-300'>  Welcome to Basics of stitching Course</h1>
             {/* watch below video to get certificate  */}
             <p className='mx-5 text-l font-bold my-5 underline'>Watch below video to get Certificate:</p>
 
 
-
-            <video onEnded={handleVideoComplete} controls className='course_video '>
-             <source src={cup} type="video/mp4" />
-            </video>
+            <ReactPlayer className='course_video'
+                width="90%"
+                height="30rem"
+                url="https://www.youtube.com/embed/f2kvQtHOG24"
+                controls
+                onEnded={handleVideoComplete}
+            />
             {videoCompleted && (
                 <><Confetti />
 
